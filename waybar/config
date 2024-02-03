@@ -11,7 +11,7 @@
     "modules-right": ["tray", "cpu", "memory", "network", "pulseaudio"],
  //Modules configuration
      "custom/arch":{
-       "format": " ",
+       "format": "󰣇 ",
        "tooltip": false,
      },
      
