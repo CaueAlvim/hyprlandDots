@@ -46,4 +46,3 @@ pacman -Sy firefox
 ufw default deny
 ufw enable
 systemctl enable ufw
-
