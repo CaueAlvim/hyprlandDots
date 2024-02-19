@@ -28,13 +28,13 @@ cp -r dotfiles/. ~/.config/
 mv Wallpapers/ ~/Imagens/
 
 # Install package list
-pacman -Sy hyprland kitty xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit polkit-gnome ufw
+pacman -S hyprland kitty xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit polkit-gnome ufw
 
 # Installing Essential Programs 
-pacman -Sy waybar swaybg dunst nautilus file-roller htop nano starship ttf-inconsolata-nerd
+pacman -S waybar swaybg dunst nautilus file-roller htop nano starship ttf-inconsolata-nerd
 
 # Installing Firefox
-pacman -Sy firefox
+pacman -S firefox
 
 # Config ufw
 ufw default deny
