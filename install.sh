@@ -6,32 +6,26 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-username=$(id -u -n 1000)
-builddir=$(pwd)
-
 # Update system
 pacman -Syu
 
 # Create folders system
 pacman -S xdg-user-dirs
+
 xdg-user-dirs-update
 
+ls -la
 
-# Making .config and main folders
-cd $builddir
-mkdir -p /home/$username/.config
+cd
 
 # Making backup of bashrc
 mv .bashrc .bashrcBak
 
 # Moving resources
-cd /home/$username/hyprlandDots/
-mv .bashrc /home/$username/
-mv .config/ /home/$username/
-mv Wallpapers/ /home/$username/Imagens/
-
-# Ensuring that the user with UID 1000 owns all files and directories within their home directory. 
-# chown -R $username:$username /home/$username
+cd ~/hyprlandDots/
+cp bashrc ~/.bashrc
+cp -r dotfiles/. ~/.config/
+mv Wallpapers/ ~/Imagens/
 
 # Install package list
 pacman -Sy hyprland kitty xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit polkit-gnome ufw
