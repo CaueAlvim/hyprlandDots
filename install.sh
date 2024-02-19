@@ -9,13 +9,6 @@ fi
 # Update system
 pacman -Syu
 
-# Create folders system
-pacman -S xdg-user-dirs
-
-xdg-user-dirs-update
-
-ls -la
-
 cd
 
 # Making backup of bashrc
