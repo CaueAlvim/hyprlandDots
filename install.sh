@@ -9,26 +9,26 @@ fi
 # Update system
 pacman -Syu
 
-# Install package list
-pacman -S hyprland kitty xdg-user-dirs xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit polkit-gnome ufw
-
-# Installing Essential Programs 
-pacman -S waybar swaybg dunst nautilus file-roller htop nano starship ttf-inconsolata-nerd
-
-# Installing Firefox
-pacman -S firefox
-
+# Making .config and main folders
 cd ~
-xdg-user-dirs-update
 
 # Making backup of bashrc
 mv .bashrc .bashrcBak
+
+# Install package list
+pacman -S hyprland kitty xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit polkit-gnome ufw
+
+# Installing Essential Programs 
+pacman -S waybar swaybg dunst nautilus file-roller htop nano starship ttf-inconsolata-nerd
 
 # Moving resources
 cd ~/hyprlandDots/
 cp bashrc ~/.bashrc
 cp -r dotfiles/. ~/.config/
-mv Wallpapers/ ~/Imagens/
+cp -r Wallpapers/ ~/Imagens/
+
+# Installing Firefox
+pacman -S firefox
 
 # Config ufw
 ufw default deny
