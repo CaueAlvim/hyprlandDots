@@ -12,14 +12,14 @@ builddir=$(pwd)
 # Update system
 pacman -Syu
 
+# Create folders system
+pacman -S xdg-user-dirs
+xdg-user-dirs-update
+
+
 # Making .config and main folders
 cd $builddir
 mkdir -p /home/$username/.config
-mkdir -p /home/$username/Documentos
-mkdir -p /home/$username/Downloads
-mkdir -p /home/$username/Imagens
-mkdir -p /home/$username/Projetos
-mkdir -p /home/$username/Músicas
 
 # Making backup of bashrc
 mv .bashrc .bashrcBak
