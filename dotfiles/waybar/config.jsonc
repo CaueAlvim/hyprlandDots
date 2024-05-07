@@ -23,6 +23,9 @@
     "custom/arch": {
         "format": " ",
         "tooltip": false,
+        "return-type": "json",
+        "on-click": "killall wofi || wofi --show drun -n",
+        "on-click-right": "killall wofi || wofi --show run -n"
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -44,7 +47,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%H:%M}  ",
+        "format": "{:%H:%M}",
         "format-alt": "{:%A, %d %B %Y}",
         "tooltip-format": "<span>{calendar}</span>",
         "calendar": {
