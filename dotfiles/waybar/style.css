@@ -6,11 +6,11 @@
 }
 
 window#waybar {
-    background-color: rgba(50, 54, 61, 0.8);
+    background-color: rgba(20, 20, 15, 0.4);
     /* border-top: 2px solid rgba(100, 114, 125, 0.83);
     border-left: 2px solid rgba(100, 114, 125, 0.83);
     border-right: 2px solid rgba(100, 114, 125, 0.83); */
-    border-bottom: 2px solid rgba(70, 79, 87, 1);
+    border-bottom: 2px solid rgba(50, 50, 45, 1);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -73,6 +73,7 @@ button {
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+    border-radius: 10px;
 }
 
 #mode {

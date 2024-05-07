@@ -9,11 +9,9 @@
         "custom/arch",
         "hyprland/workspaces"
     ],
-    
     "modules-center": [
         "clock"
     ],
-
     "modules-right": [
         "tray",
         "cpu",
@@ -21,13 +19,11 @@
         "network",
         "pulseaudio"
     ],
-
     // Modules configuration
     "custom/arch": {
         "format": " ",
         "tooltip": false,
     },
-
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -40,7 +36,7 @@
             "4": "",
             "urgent": "",
             "focused": "󰋲",
-            "default": "󰻿"
+            "default": "󰻃"
         }
     },
     "tray": {
