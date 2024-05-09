@@ -21,7 +21,7 @@
     ],
     // Modules configuration
     "custom/arch": {
-        "format": " ",
+        "format": "",
         "tooltip": false,
         "return-type": "json",
         "on-click": "killall wofi || wofi --show drun -n",
@@ -43,12 +43,12 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 20,
         "spacing": 10
     },
     "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%A, %d %B %Y}",
+        "format": " {:%H:%M} ",
+        "format-alt": "{:%A, %d %B %Y} ",
         "tooltip-format": "<span>{calendar}</span>",
         "calendar": {
             "mode": "year",
@@ -75,7 +75,7 @@
     },
     "memory": {
         "interval": 10,
-        "format": "{}% ",
+        "format": "{}% ",
         "tooltip-format": "{used}G / {total}G",
     },
     "temperature": {
@@ -108,7 +108,7 @@
     //   },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{icon} ",
+        "format-wifi": "Connected{icon} ",
         "format-ethernet": "Connected{icon} 󰍹",
         "tooltip-format": "{ifname}/{ipaddr} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) 󰍺",
@@ -125,7 +125,7 @@
         "format-icons": {
             "default": [
                 "",
-                "",
+                "",
                 ""
             ]
         },
