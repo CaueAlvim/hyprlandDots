@@ -1,0 +1,104 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons: false;
+      /* Highlight an entry under the mouse pointer */
+    hover-select: true;
+
+    /* Disable MousePrimary as an entry selector */
+    /* Without this setting you won't be able to set MousePrimary as an entry
+     acceptor. */
+    me-select-entry: "";
+
+    /* Use either LMB single click or RMB single click or LMB double click
+     to accept an entry */
+    me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+}
+
+/*
+USE_BUTTONS=YES
+*/
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    east;
+    anchor:                      east;
+    height:		         95%;
+    fullscreen:                  false;
+    width:                       95px;
+    x-offset:                    -10px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    cursor:                      "default";
+    background-color:            transparent;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            transparent;
+    children:                    [ "listview" ];
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       5;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     25px 10px;
+    border:                      0px solid;
+    border-radius:               100%;
+    background-color:            black / 75%;
+    text-color:                  #89DCEB;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        "feather bold 24";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}

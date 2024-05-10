@@ -17,15 +17,23 @@
         "cpu",
         "memory",
         "network",
-        "pulseaudio"
+        "pulseaudio",
+        "custom/power",
     ],
     // Modules configuration
     "custom/arch": {
         "format": "",
         "tooltip": false,
         "return-type": "json",
-        "on-click": "killall wofi || wofi --show drun -n",
-        "on-click-right": "killall wofi || wofi --show run -n"
+        "on-click": "killall rofi || rofi -show drun -n",
+        "on-click-right": "killall rofi || rofi -show drun -n"
+    },
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "return-type": "json",
+        "on-click": "killall rofi || $HOME/.config/rofi/powermenu.sh",
+        "on-click-right": "killall rofi || $HOME/.config/rofi/powermenu.sh"
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
