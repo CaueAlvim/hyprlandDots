@@ -32,6 +32,7 @@ run_cmd() {
 	elif [[ $1 == '--lock' ]]; then
 		hyprlock
 	elif [[ $1 == '--suspend' ]]; then
+ 		hyprctl dispatch dpms off
 		systemctl suspend
 	elif [[ $1 == '--logout' ]]; then
 		loginctl terminate-user $USER
